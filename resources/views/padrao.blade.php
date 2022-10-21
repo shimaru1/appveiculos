@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/app.css">
-    <title>Loja de Veiculos</title>
+    <title>SuperCar</title>
 </head>
 <body>
 <header>
@@ -27,10 +27,10 @@
             Caminhões
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="{{route('cadastrar-caminhao')}}">Cadastrar</a></li>
+            <li><a class="dropdown-item" href="{{'/cadastrar-caminhao'}}">Cadastrar</a></li>
             <li><a class="dropdown-item" href="#">Buscar</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="{{route('editar-caminhao')}}">Gerenciar</a></li>
+            <li><a class="dropdown-item" href="{{'/editar-caminhao'}}">Gerenciar</a></li>
           </ul>
         </li>
 
@@ -58,10 +58,27 @@
 @yield('content')
 
 
-<footer>
-    
+<footer > 
+    <div class="text-center">
+        <nav> 
+            <h2>Fique conectado !</h2>
+            <ul> 
+            <a href="https://www.instagram.com/driftcarros/">
+            <img src="/img/insta.png" alt="">
+            </a>
+             <a href="https://www.youtube.com/watch?v=6BnNdKFdWkc">
+              <img src="/img/youtube.png" alt="">
+             </a>
+            <a href="https://pt-br.facebook.com/groups/247202169028650/">
+            <img src="/img/facebook.png" alt="">
+            </a>
+            </ul> 
+        </nav>
+        <small>Copyright © 2010 </small>
+    </div>
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
 </body>
 </html>
